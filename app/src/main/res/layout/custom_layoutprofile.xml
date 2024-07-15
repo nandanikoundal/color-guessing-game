@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/ballonbackground"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="174dp"
+        android:layout_height="159dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#4E97EA"
+            app:shapeAppearanceOverlay="@style/FabShape1"
+            app:tint="#ffffff"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            app:layout_constraintBottom_toBottomOf="@id/imgprofile"
+            app:layout_constraintEnd_toEndOf="@id/imgprofile" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Age"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Age"
+        android:inputType="number"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE OF BIRTH"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="Enter Your Date Of Birth"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="ok"
+        android:backgroundTint="#4E97EA"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

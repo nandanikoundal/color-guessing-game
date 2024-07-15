@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/blankscreen"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="174dp"
+            android:layout_height="159dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etname"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="Enter Full Name"
+        android:textColor="#000000"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Age"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etage"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:hint="Enter Your Age"
+        android:textColor="#000000"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE OF BIRTH"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etdob"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:hint="Enter Your Date Of Birth"
+        android:textColor="#000000"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4E97EA"
+        android:text="edit"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5CA1EF"
+        android:text="@string/logout"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

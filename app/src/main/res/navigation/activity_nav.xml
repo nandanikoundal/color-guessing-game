@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nav.xml"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.nandani.project_work.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_levelSelect"
+            app:destination="@id/levelSelect"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/levelSelect" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelSelect"
+        android:name="com.nandani.project_work.LevelSelect"
+        android:label="level_select"
+        tools:layout="@layout/fragment_level_select" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.nandani.project_work.Profile"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_third_screen2"
+            app:destination="@id/third_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreboard"
+        android:name="com.nandani.project_work.score_board"
+        android:label="score board"
+        tools:layout="@layout/fragment_score_board" />
+    <fragment
+        android:id="@+id/playQuizFragment"
+        android:name="com.nandani.project_work.BeginningQuestionFragment"
+        android:label="Beginner_level" />
+    <fragment
+        android:id="@+id/advanceQuestionFragment"
+        android:name="com.nandani.project_work.AdvanceQuestionFragment"
+        android:label="Advance_level" />
+    <fragment
+        android:id="@+id/average"
+        android:name="com.nandani.project_work.AverageQuestionFragment"
+        android:label="Average_level" />
+
+
+    <activity
+        android:id="@+id/third_screen"
+        android:name="com.nandani.project_work.Third_screen"
+        android:label="Third_screen" />
+
+</navigation>

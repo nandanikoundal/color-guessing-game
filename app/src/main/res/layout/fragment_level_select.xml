@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ballonbackground">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center"
+        android:text="Select The Level Which Is Given Below!"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/beginner"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="85dp"
+        android:backgroundTint="#4E97EA"
+        android:text="Beginner"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/average"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/beginner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp"
+        android:backgroundTint="#4E97EA"
+        android:text="Average"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/advance"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/average"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="85dp"
+        android:backgroundTint="#4E97EA"
+        android:text="Advance"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="#4E97EA"
+        android:src="@drawable/ic_baseline_home_24"
+        app:shapeAppearanceOverlay="@style/FabShape1"
+        app:tint="#ffffff" />
+
+
+</RelativeLayout>
